@@ -1,0 +1,26 @@
+You've successfully read sequences from two FASTA files (COL1A1_1277.fasta and COL2A1_1280.fasta) and extracted specific fragments from them.
+
+You've defined a function perform_alignment that performs pairwise sequence alignment using global sequence alignment with a scoring system based on exact matches.
+
+You've successfully aligned two example fragments (fragment1 and fragment2), calculated the alignment score, and determined the identity percentage.
+
+You've attempted to perform multiple sequence alignment (MSA) using Clustal Omega, but there was an issue with importing the ClustalOmegaCommandline class. I provided an alternative approach using the subprocess module.
+
+Mistakes/Issues:
+
+The BiopythonDeprecationWarning you received is just a warning indicating that the Bio.pairwise2 module is deprecated and will be removed in future releases of Biopython. The suggested alternative is to use Bio.Align.PairwiseAligner instead. However, your code still works fine with the current version of Biopython.
+
+The issue with Clustal Omega may be due to incorrect installation or the program not being in your system's PATH. You can try running clustalo directly from the command line to see if it's accessible.
+
+Next Steps:
+
+You can continue by exploring the aligned sequences further. For example, you could analyze conserved regions, look for patterns or motifs, or perform additional analyses based on the alignment.
+Consider Further Analyses:
+
+Depending on your research goals, you might want to explore areas such as phylogenetic analysis, secondary structure prediction, or functional annotation of the sequences.
+Documentation and Reporting:
+
+If this project is part of a larger research effort, consider documenting your code and results in a way that makes it easy to understand and reproduce.
+Integration with Other Tools or Databases:
+
+If relevant, you might want to integrate your project with other bioinformatics tools or databases to enrich the analysis.
